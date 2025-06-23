@@ -1,10 +1,13 @@
-💱 Staxtech-Project08--Currency-Converter
-🌍 Live Currency Converter – HTML, CSS, JavaScript
-🎓 Project 08 – Completed during my internship at StaxTech
+**💱 Staxtech-Project08--Currency-Converter**
+
+**🌍 Live Currency Converter – HTML, CSS, JavaScript**
+
+**🎓 Project 08 – Completed during my internship at StaxTech**
 
 A visually appealing, real-time Currency Converter Web Application built using HTML, CSS (Glassmorphism UI) and Vanilla JavaScript. It fetches live exchange rates via a public API and allows users to convert between global currencies with ease. The interface includes interactive features such as flag previews, currency swapping, and responsive design.
 
-🚀 Features
+---
+**🚀 Features**
 🌐 Real-time Currency Conversion using ExchangeRate API
 
 🔄 Currency Swap Functionality
@@ -21,7 +24,8 @@ A visually appealing, real-time Currency Converter Web Application built using H
 
 ⚡ Smooth transitions and interactive layout
 
-🛠️ Technologies Used
+---
+**🛠️ Technologies Used**
 HTML5
 
 CSS3 (Flexbox, Gradients, Glassmorphism)
@@ -30,7 +34,8 @@ JavaScript (DOM Manipulation, API Integration)
 
 ExchangeRate-API (for live exchange rates)
 
-📚 What I Learned
+---
+**📚 What I Learned**
 How to integrate real-time public APIs into a frontend app
 
 Creating modern UIs using glassmorphism and advanced CSS
