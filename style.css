@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-y: auto; /* ✅ allow dropdown to expand properly */
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  z-index: -1;
+}
+
+.glass-container {
+  max-width: 420px;
+  margin: 50px auto;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  /* ✅ fixes for dropdown overflow */
+  overflow: visible;
+  position: relative;
+  z-index: 10;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.converter-box input,
+select,
+.convert-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+/* ✅ modern styling for dropdowns */
+select {
+  appearance: none;
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  position: relative;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+.select-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.currency img {
+  width: 30px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+/* ✅ hover zoom effect for flags */
+.currency:hover img {
+  transform: scale(2.2);
+  position: absolute;
+  top: -10px;
+  left: 40px;
+  z-index: 2000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#swap {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+#swap:active {
+  transform: rotate(180deg);
+}
+
+.convert-btn {
+  margin-top: 20px;
+  font-weight: bold;
+  background: #ffb347;
+  color: #222;
+  transition: 0.3s ease;
+}
+
+.convert-btn:hover {
+  background: #ff9800;
+}
+
+.result-text {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #fff;
+}
